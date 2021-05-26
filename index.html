@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .mutule_fund_label {
+            position: absolute;
+            right: 85px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Bond -->
+    <div class="container mt-5 border h-100">
+        <div class="row bg-dark text-white p-2 text-center">
+            <div class="col-3 py-2">950.00</div>
+            <div class="col-3 py-2">200.00</div>
+            <div class="col-3 py-2">1000.00</div>
+            <div class="col-3 py-2">8.75%</div>
+            <div class="col-3 py-2">portfolio value</div>
+            <div class="col-3 py-2">Realized CF</div>
+            <div class="col-3 py-2">intrested value</div>
+            <div class="col-3 py-2">IRR</div>
+        </div>
+        <div class="row">
+            <div class="custom-control custom-switch mt-3 ml-auto d-flex">
+                <span class="col-auto d-block">Mutule fund</span>
+                <div class="position-relative col mx-3 ">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+
+                    <label class="custom-control-label" for="customSwitch1" id="btn_name">Bond</label>
+                </div>
+                
+            </div>
+        </div>
+        <div>
+            <div class="w-100 mt-3 d-flex align-items-center justify-content-between pl-2"
+                style="background-color: #d0f5ea;">
+                <span>Transaction</span>
+                <button type="button" class="btn shadow-none" data-toggle="collapse" data-target="#transaction">
+                    Click to view</button>
+            </div>
+            <div id="transaction" class="collapse text-center  mt-3 ">
+
+                <div class="row border-bottom bg-dark text-white m-0 py-1 rounded">
+                    <div class="col-3 py-2">Name</div>
+                    <div class="col-3 py-2">Qty.</div>
+                    <div class="col-3 py-2">Amount</div>
+                    <div class="col-3 py-2">Status</div>
+                </div>
+                <div class="row border-bottom m-0">
+                    <div class="col-3 py-1">IRFC</div>
+                    <div class="col-3 py-1">10</div>
+                    <div class="col-3 py-1">1027.85</div>
+                    <div class="col-3 py-1">BOOKED</div>
+                </div>
+                <div class="row border-bottom m-0">
+                    <div class="col-3 py-1">IRFC</div>
+                    <div class="col-3 py-1">10</div>
+                    <div class="col-3 py-1">1027.85</div>
+                    <div class="col-3 py-1">BOOKED</div>
+                </div>
+
+            </div>
+            <div class="w-100 mt-3 d-flex justify-content-between align-items-center pl-2"
+                style="background-color: #d0f5ea;">
+                <span>Holding</span>
+                <button type="button" class="btn shadow-none" data-toggle="collapse" data-target="#holdings">Click to view</button>
+            </div>
+            <div id="holdings" class="collapse text-center mt-3 w-100">
+                <div class="row border-bottom bg-dark text-white m-0 py-1 rounded">
+                    <div class="col-auto py-2">&nbsp;</div>
+                    <div class="col py-2">Name</div>
+                    <div class="col-2 py-2">Next cash flow</div>
+                    <div class="col-2 py-2">tym</div>
+                    <div class="col-2 py-2">Current value</div>
+                    <div class="col-2 py-2">Invested</div>
+                    <div class="col-2 py-2">Realized CF</div>
+                </div>
+                <div class="row border-bottom m-0">
+                    <div class="col-auto  py-1">&nbsp;</div>
+                    <div class="col py-1">Total</div>
+                    <div class="col-2 py-1">100(24th jan 2015)</div>
+                    <div class="col-2 py-1">85%</div>
+                    <div class="col-2 py-1">1000</div>
+                    <div class="col-2 py-1">800</div>
+                    <div class="col-2 py-1">100</div>
+                </div>
+                <div class="row border-bottom m-0 ">
+                    <div class="col-auto py-2">+</div>
+                    <div class="col text-center py-2">IRFC</div>
+                    <div class="col-2 py-2">100(24th jan 2015)</div>
+                    <div class="col-2 py-2">8%</div>
+                    <div class="col-2 py-2">100</div>
+                    <div class="col-2 py-2">80</div>
+                    <div class="col-2 py-2">10</div>
+                </div>
+            </div>
+            <div class="w-100 mt-3 d-flex justify-content-between align-items-center pl-2 "
+                style="background-color: #d0f5ea;">
+                <span>Charts</span>
+                <button type="button" class="btn shadow-none " data-toggle="collapse" data-target="#pie_chart">Click to
+                    view</button>
+            </div>
+            <div id="pie_chart" class="collapse text-center mt-3">
+                <div class="row border m-0">
+                    <div class="col-12 col-md-6 p-md-5 p-3">
+                        <canvas class="w-100 h-100" id="myChart"></canvas>
+
+                    </div>
+                    <div class="col-12 col-md-6 p-md-5 p-3">
+                        <canvas class="w-100 h-100" id="myChart2"></canvas>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w-100 mt-3 d-flex justify-content-between align-items-center pl-2 "
+                style="background-color: #d0f5ea;">
+                <span>Bar Charts</span>
+                <button type="button" class="btn shadow-none" data-toggle="collapse" data-target="#bar_chart">Click to
+                    view</button>
+            </div>
+            <div id="bar_chart" class="collapse text-center mt-3">
+
+                <div class="row border m-0">
+                    <div class="col-12">
+                        <canvas id="myChart1"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mutule fund -->
+        <div>
+
+
+            <div class="w-100 mt-3 d-flex align-items-center justify-content-between pl-2"
+                style="background-color: #d0f5ea;">
+                <span>Transaction</span>
+                <button type="button" class="btn shadow-none" data-toggle="collapse" data-target="#m_transaction">
+                    Click to view</button>
+            </div>
+            <div id="m_transaction" class="collapse text-center  mt-3 ">
+
+                <div class="row border-bottom bg-dark text-white m-0 py-1 rounded">
+                    <div class="col-3 py-2">Name</div>
+                    <div class="col-3 py-2">Qty.</div>
+                    <div class="col-3 py-2">Amount</div>
+                    <div class="col-3 py-2">Status</div>
+                </div>
+                <div class="row border-bottom m-0">
+                    <div class="col-3 py-1">IRFC</div>
+                    <div class="col-3 py-1">10</div>
+                    <div class="col-3 py-1">1027.85</div>
+                    <div class="col-3 py-1">BOOKED</div>
+                </div>
+                <div class="row border-bottom m-0">
+                    <div class="col-3 py-1">IRFC</div>
+                    <div class="col-3 py-1">10</div>
+                    <div class="col-3 py-1">1027.85</div>
+                    <div class="col-3 py-1">BOOKED</div>
+                </div>
+
+            </div>
+            <div class="w-100 mt-3 d-flex justify-content-between align-items-center pl-2"
+                style="background-color: #d0f5ea;">
+                <span>Holding</span>
+                <button type="button" class="btn shadow-none" data-toggle="collapse" data-target="#m_holdings">Click to
+                    view</button>
+            </div>
+            <div id="m_holdings" class="collapse text-center mt-3 w-100">
+                <div class="row border-bottom bg-dark text-white m-0 py-1 rounded">
+                    <div class="col-auto py-2">&nbsp;</div>
+                    <div class="col py-2">Name</div>
+                    <div class="col-3 py-2">IRR</div>
+                    <div class="col-2 py-2">Current</div>
+                    <div class="col-3 py-2">Invested</div>
+                </div>
+                <div class="row border-bottom m-0">
+                    <div class="col-auto py-1">&nbsp;</div>
+                    <div class="col py-1">Total</div>
+                    <div class="col-3 py-1">100(24th jan 2015)</div>
+                    <div class="col-2 py-1">85%</div>
+                    <div class="col-3 py-1">1000</div>
+                </div>
+                <div class="row border-bottom m-0">
+                    <div class="col-auto py-1">&nbsp;</div>
+                    <div class="col py-1">IRFC</div>
+                    <div class="col-3 py-1">100(24th jan 2015)</div>
+                    <div class="col-2 py-1">8%</div>
+                    <div class="col-3 py-1">100</div>
+
+                </div>
+            </div>
+            <div class="w-100 mt-3 d-flex justify-content-between align-items-center pl-2 "
+                style="background-color: #d0f5ea;">
+                <span>Charts</span>
+                <button type="button" class="btn shadow-none" data-toggle="collapse" data-target="#m_pie_chart">Click to
+                    view</button>
+            </div>
+            <div id="m_pie_chart" class="collapse text-center mt-3 ">
+                <div class="row border m-0">
+                    <div class="col-6 col-md-6">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+                <div class="row border m-0">
+                    <div class="col-12 col-md-6">
+                        <canvas id="myChart3"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mutule fund -->
+    </div>
+    <!-- Bond -->
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

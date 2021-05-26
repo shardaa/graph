@@ -1,0 +1,48 @@
+// All of your custom SCSS variables go first
+$primary: #3c78d8;
+$blue: #3c78d8;
+$success: #08cc91c9;
+$font-family-sans-serif: "Open Sans", sans-serif;
+
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+//then bootstrap & bootstrap-vue should be added after
+//so that they inherit the custom SCSS variables
+
+@import "scss/bootstrap";
+// @import "~bootstrap-vue/src/index.scss";
+
+// additional global classes go here
+.bg-hover-lightgray {
+  background-color: $gray-200;
+}
+
+.bg-hover-lightgray:hover {
+  background-color: $gray-300;
+}
+
+.bg-gray {
+  background-color: $gray-300;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+}
+
+.small-text {
+  font-size: 0.7em;
+}
+
+::selection {
+  background: $primary; /* WebKit/Blink Browsers */
+  color: $white;
+}
+
+::-moz-selection {
+  background: $primary; /* WebKit/Blink Browsers */
+  color: $white;
+}
