@@ -14,6 +14,15 @@
             right: 85px;
 
         }
+        .light-grey{
+            background-color:#eee;
+        }
+        .fee{
+            background-color:rgb(248, 248, 248);
+        }
+        .light-grey{
+            background-color:#4e4e4e;
+        }
     </style>
 </head>
 
@@ -21,7 +30,7 @@
 
     <!-- Bond -->
     <div class="container mt-5 border h-100">
-        <div class="row bg-dark text-white p-2 text-center">
+        <div class="row light-grey shadow text-dark p-2 text-center">
             <div class="col-3 py-2">950.00</div>
             <div class="col-3 py-2">200.00</div>
             <div class="col-3 py-2">1000.00</div>
@@ -43,21 +52,21 @@
             </div>
         </div>
         <div>
-            <div class="w-100 mt-3 d-flex align-items-center justify-content-between pl-2"
+            <div class="w-100 mt-3 d-flex shadow align-items-center justify-content-between pl-2"
                 style="background-color: #d0f5ea;">
                 <span>Transaction</span>
                 <button type="button" class="btn shadow-none" data-toggle="collapse" data-target="#transaction">
                     Click to view</button>
             </div>
-            <div id="transaction" class="collapse text-center  mt-3 ">
+            <div id="transaction" class="collapse shadow text-center  mt-3 ">
 
-                <div class="row border-bottom bg-dark text-white m-0 py-1 rounded">
+                <div class="row border-bottom light-grey text-dark m-0 py-1 rounded">
                     <div class="col-3 py-2">Name</div>
                     <div class="col-3 py-2">Qty.</div>
                     <div class="col-3 py-2">Amount</div>
                     <div class="col-3 py-2">Status</div>
                 </div>
-                <div class="row border-bottom m-0">
+                <div class="row border-bottom fee m-0">
                     <div class="col-3 py-1">IRFC</div>
                     <div class="col-3 py-1">10</div>
                     <div class="col-3 py-1">1027.85</div>
@@ -71,13 +80,13 @@
                 </div>
 
             </div>
-            <div class="w-100 mt-3 d-flex justify-content-between align-items-center pl-2"
+            <div class="w-100 mt-3 d-flex shadow justify-content-between align-items-center pl-2"
                 style="background-color: #d0f5ea;">
                 <span>Holding</span>
                 <button type="button" class="btn shadow-none" data-toggle="collapse" data-target="#holdings">Click to view</button>
             </div>
             <div id="holdings" class="collapse text-center mt-3 w-100">
-                <div class="row border-bottom bg-dark text-white m-0 py-1 rounded">
+                <div class="row border-bottom light-grey text-dark m-0 py-1 rounded">
                     <div class="col-auto py-2">&nbsp;</div>
                     <div class="col py-2">Name</div>
                     <div class="col-2 py-2">Next cash flow</div>
@@ -105,7 +114,7 @@
                     <div class="col-2 py-2">10</div>
                 </div>
             </div>
-            <div class="w-100 mt-3 d-flex justify-content-between align-items-center pl-2 "
+            <div class="w-100 shadow mt-3 d-flex justify-content-between align-items-center pl-2 "
                 style="background-color: #d0f5ea;">
                 <span>Charts</span>
                 <button type="button" class="btn shadow-none " data-toggle="collapse" data-target="#pie_chart">Click to
@@ -125,7 +134,7 @@
 
             </div>
 
-            <div class="w-100 mt-3 d-flex justify-content-between align-items-center pl-2 "
+            <div class="w-100 shadow mt-3 d-flex justify-content-between align-items-center pl-2 "
                 style="background-color: #d0f5ea;">
                 <span>Bar Charts</span>
                 <button type="button" class="btn shadow-none" data-toggle="collapse" data-target="#bar_chart">Click to
@@ -145,7 +154,7 @@
         <div>
 
 
-            <div class="w-100 mt-3 d-flex align-items-center justify-content-between pl-2"
+            <div class="w-100 shadow mt-3 d-flex align-items-center justify-content-between pl-2"
                 style="background-color: #d0f5ea;">
                 <span>Transaction</span>
                 <button type="button" class="btn shadow-none" data-toggle="collapse" data-target="#m_transaction">
@@ -153,7 +162,7 @@
             </div>
             <div id="m_transaction" class="collapse text-center  mt-3 ">
 
-                <div class="row border-bottom bg-dark text-white m-0 py-1 rounded">
+                <div class="row border-bottom light-grey text-dark m-0 py-1 rounded">
                     <div class="col-3 py-2">Name</div>
                     <div class="col-3 py-2">Qty.</div>
                     <div class="col-3 py-2">Amount</div>
@@ -173,14 +182,14 @@
                 </div>
 
             </div>
-            <div class="w-100 mt-3 d-flex justify-content-between align-items-center pl-2"
+            <div class="w-100 shadow mt-3 d-flex justify-content-between align-items-center pl-2"
                 style="background-color: #d0f5ea;">
                 <span>Holding</span>
                 <button type="button" class="btn shadow-none" data-toggle="collapse" data-target="#m_holdings">Click to
                     view</button>
             </div>
             <div id="m_holdings" class="collapse text-center mt-3 w-100">
-                <div class="row border-bottom bg-dark text-white m-0 py-1 rounded">
+                <div class="row border-bottom light-grey text-dark m-0 py-1 rounded">
                     <div class="col-auto py-2">&nbsp;</div>
                     <div class="col py-2">Name</div>
                     <div class="col-3 py-2">IRR</div>
@@ -203,7 +212,7 @@
 
                 </div>
             </div>
-            <div class="w-100 mt-3 d-flex justify-content-between align-items-center pl-2 "
+            <div class="w-100 shadow mt-3 d-flex justify-content-between align-items-center pl-2 "
                 style="background-color: #d0f5ea;">
                 <span>Charts</span>
                 <button type="button" class="btn shadow-none" data-toggle="collapse" data-target="#m_pie_chart">Click to
